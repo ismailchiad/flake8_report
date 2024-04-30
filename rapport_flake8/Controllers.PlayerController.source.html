@@ -53,30 +53,24 @@
                class="code sev- "><tt><i>12</i>         <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span> <span class="o">=</span> <span class="kc">None</span></tt>
             </div>
             <div id="l13"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E301
-                     </span>
-                     Expected 1 blank line, found 0</li>
-               
-               </ul><tt><i>13</i>     <span class="k">def</span> <span class="nf">add_player</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>13</i> &nbsp;</tt>
             </div>
             <div id="l14"
-               class="code sev- "><tt><i>14</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>14</i>     <span class="k">def</span> <span class="nf">add_player</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l15"
-               class="code sev- "><tt><i>15</i> <span class="sd">        Demande les informations du joueur via la vue, crée une instance du joueur et l&#39;enregistre.</span></tt>
+               class="code sev- "><tt><i>15</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l16"
-               class="code sev- "><tt><i>16</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>16</i> <span class="sd">        Demande les informations du joueur via la vue, crée une instance du joueur et l&#39;enregistre.</span></tt>
             </div>
             <div id="l17"
-               class="code sev- "><tt><i>17</i>         <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span> <span class="o">=</span> <span class="n">PlayerView</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>17</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l18"
+               class="code sev- "><tt><i>18</i>         <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span> <span class="o">=</span> <span class="n">PlayerView</span><span class="p">()</span></tt>
+            </div>
+            <div id="l19"
                class="code sev-2  le">
                <ul class="violations">
                
@@ -86,16 +80,16 @@
                      </span>
                      Line too long (116 > 109 characters)</li>
                
-               </ul><tt><i>18</i>         <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span><span class="o">.</span><span class="n">get_player_info</span><span class="p">()</span></tt>
-            </div>
-            <div id="l19"
-               class="code sev- "><tt><i>19</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span><span class="p">)</span></tt>
+               </ul><tt><i>19</i>         <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span><span class="o">.</span><span class="n">get_player_info</span><span class="p">()</span></tt>
             </div>
             <div id="l20"
-               class="code sev- "><tt><i>20</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">save_player</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>20</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span><span class="p">)</span></tt>
             </div>
             <div id="l21"
-               class="code sev- "><tt><i>21</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Joueur ajouté à la base de donnée avec succès !&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>21</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">save_player</span><span class="p">()</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev- "><tt><i>22</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Joueur ajouté à la base de donnée avec succès !&quot;</span><span class="p">)</span></tt>
             </div>
             
          </div>

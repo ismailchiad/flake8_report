@@ -170,6 +170,9 @@
                class="code sev- "><tt><i>51</i>         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">player</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">players_reversed</span><span class="p">):</span></tt>
             </div>
             <div id="l52"
+               class="code sev- "><tt><i>52</i>             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;first_name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;last_name&#39;</span><span class="p">]</span></tt>
+            </div>
+            <div id="l53"
                class="code sev-2  le">
                <ul class="violations">
                
@@ -177,39 +180,39 @@
                      <span class="count sev-2">
                         E501
                      </span>
-                     Line too long (143 > 109 characters)</li>
+                     Line too long (124 > 109 characters)</li>
                
-               </ul><tt><i>52</i>             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;first_name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;last_name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - Né le </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;birth_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - ID: </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;national_chess_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
-            </div>
-            <div id="l53"
-               class="code sev- "><tt><i>53</i> &nbsp;</tt>
+               </ul><tt><i>53</i> <span class="w">                                                      </span><span class="si">}</span><span class="s2"> - Né le </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;birth_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - ID: </span><span class="si">{</span><span class="n">player</span><span class="p">[</span><span class="s1">&#39;national_chess_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l54"
-               class="code sev- "><tt><i>54</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>54</i> &nbsp;</tt>
             </div>
             <div id="l55"
-               class="code sev- "><tt><i>55</i>             <span class="k">try</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>55</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
             </div>
             <div id="l56"
-               class="code sev- "><tt><i>56</i>                 <span class="n">player_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Entrez le numéro du joueur que vous voulez sélectionner : &quot;</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>56</i>             <span class="k">try</span><span class="p">:</span></tt>
             </div>
             <div id="l57"
-               class="code sev- "><tt><i>57</i>                 <span class="k">if</span> <span class="n">player_index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">player_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">players_reversed</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>57</i>                 <span class="n">player_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Entrez le numéro du joueur que vous voulez sélectionner : &quot;</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span></tt>
             </div>
             <div id="l58"
-               class="code sev- "><tt><i>58</i>                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Numéro de joueur invalide. Veuillez entrer un numéro de joueur valide.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>58</i>                 <span class="k">if</span> <span class="n">player_index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">player_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">players_reversed</span><span class="p">):</span></tt>
             </div>
             <div id="l59"
-               class="code sev- "><tt><i>59</i>                 <span class="k">else</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>59</i>                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Numéro de joueur invalide. Veuillez entrer un numéro de joueur valide.&quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l60"
-               class="code sev- "><tt><i>60</i>                     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">players</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">player_index</span></tt>
+               class="code sev- "><tt><i>60</i>                 <span class="k">else</span><span class="p">:</span></tt>
             </div>
             <div id="l61"
-               class="code sev- "><tt><i>61</i>             <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>61</i>                     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">players</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">player_index</span></tt>
             </div>
             <div id="l62"
-               class="code sev- "><tt><i>62</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Veuillez entrer un numéro.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>62</i>             <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span></tt>
+            </div>
+            <div id="l63"
+               class="code sev- "><tt><i>63</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Veuillez entrer un numéro.&quot;</span><span class="p">)</span></tt>
             </div>
             
          </div>
