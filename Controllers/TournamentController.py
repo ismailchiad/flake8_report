@@ -13,7 +13,7 @@ class TournamentController:
 
     def create_tournament(self):
         """
-        Crée un tournoi en récupérant les informations nécessaires depuis la vue du tournoi, puis le sauvegarde.
+        Crée tournoi en récupérant informations nécessaires depuis vue du tournoi, puis sauvegarde.
         """
         name, location, start_date, end_date, rounds, description = self.tournamentView.get_tournament_info()
         self.tournament = (

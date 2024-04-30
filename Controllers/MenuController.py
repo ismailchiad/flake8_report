@@ -17,7 +17,7 @@ class MenuController:
 
     def user_choice(self):
         """
-        Gère le choix de l'utilisateur dans le menu principal et appelle les fonctions correspondantes.
+        Gère le choix de l'utilisateur dans le menu et appelle les fcts correspondantes.
         """
         choice = self.menu.main_menu()
 
@@ -46,7 +46,7 @@ class MenuController:
 
     def report_menu_choice(self):
         """
-        Gère le choix de l'utilisateur dans le sous-menu des rapports et appelle les méthodes correspondantes.
+        Gère le choix de l'utilisateur dans le sous-menu des rapports et appelle les méthodes.
         """
         choice = self.menu.report_menu()
 
